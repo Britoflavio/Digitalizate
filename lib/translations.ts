@@ -1,0 +1,385 @@
+export type Language = "en" | "es" | "pt"
+
+export const translations = {
+  en: {
+    // Header
+    nav: {
+      services: "Services",
+      portfolio: "Portfolio",
+      about: "About",
+      contact: "Contact",
+      login: "Log in",
+      startProject: "Start Project",
+    },
+    // Hero
+    hero: {
+      badge: "Crafting Digital Experiences Since 2020",
+      title1: "Transforming Ideas",
+      title2: "Into High-Performance",
+      title3: "Digital Reality",
+      subtitle:
+        "From intelligent booking systems to stunning landing pages and memorable digital invitations. We transform ideas into high-performance digital experiences.",
+      cta1: "Start Your Project",
+      cta2: "Watch Showreel",
+      stat1: "200+",
+      stat1Label: "Projects Delivered",
+      stat2: "50+",
+      stat2Label: "Happy Clients",
+      stat3: "99%",
+      stat3Label: "Client Satisfaction",
+    },
+    // Services
+    services: {
+      badge: "Our Services",
+      title: "Digital Solutions That",
+      titleHighlight: "Drive Growth",
+      subtitle:
+        "We specialize in three core digital products, each crafted with precision, performance, and your business goals in mind.",
+      service1: {
+        title: "Online Booking Systems",
+        subtitle: "Turneros",
+        description:
+          "Intelligent appointment scheduling platforms that streamline operations for clinics, salons, consultants, and service-based businesses.",
+        feature1: "Real-time availability sync",
+        feature2: "Automated SMS & email reminders",
+        feature3: "Multi-staff calendars",
+        feature4: "Payment integration",
+      },
+      service2: {
+        title: "Custom Landing Pages",
+        subtitle: "High-Converting Design",
+        description:
+          "Conversion-focused landing pages that capture attention, tell your story, and turn visitors into loyal customers.",
+        feature1: "Mobile-first responsive",
+        feature2: "SEO & Core Web Vitals optimized",
+        feature3: "A/B testing ready",
+        feature4: "Analytics integration",
+      },
+      service3: {
+        title: "Digital Invitations",
+        subtitle: "Interactive Experiences",
+        description:
+          "Stunning animated invitations for weddings, birthdays, corporate events, and celebrations that leave lasting impressions.",
+        feature1: "Custom animations & effects",
+        feature2: "RSVP tracking dashboard",
+        feature3: "Photo gallery integration",
+        feature4: "Social sharing",
+      },
+      learnMore: "Learn More",
+    },
+    // Features
+    features: {
+      badge: "Why Choose Us",
+      title: "Built Different,",
+      titleHighlight: "Delivered Better",
+      subtitle:
+        "Every project we deliver combines technical excellence with creative innovation, ensuring your digital presence stands out.",
+      feature1: "Lightning Performance",
+      feature1Desc: "Sub-second load times with optimized assets and edge delivery",
+      feature2: "Enterprise Security",
+      feature2Desc: "SSL encryption, secure payments, and GDPR compliance built-in",
+      feature3: "Bespoke Design",
+      feature3Desc: "Custom aesthetics tailored to your brand identity and vision",
+      feature4: "Clean Architecture",
+      feature4Desc: "Maintainable, scalable code following industry best practices",
+      feature5: "Responsive First",
+      feature5Desc: "Flawless experience across all devices and screen sizes",
+      feature6: "SEO Optimized",
+      feature6Desc: "Built for visibility with semantic markup and structured data",
+      feature7: "Fast Delivery",
+      feature7Desc: "Agile development with regular updates and quick turnaround",
+      feature8: "Ongoing Support",
+      feature8Desc: "Dedicated assistance and maintenance after launch",
+    },
+    // CTA
+    cta: {
+      badge: "Let's Talk",
+      title: "Ready to Transform Your",
+      titleHighlight: "Digital Presence?",
+      subtitle:
+        "Whether you need a booking system, landing page, or digital invitation, we're here to bring your vision to life. Let's create something extraordinary together.",
+      cta1: "Schedule Consultation",
+      cta2: "Send Message",
+      benefit1: "Free Discovery Call",
+      benefit1Desc: "30-minute consultation to understand your needs",
+      benefit2: "Quick Turnaround",
+      benefit2Desc: "Most projects delivered within 2-4 weeks",
+      benefit3: "Satisfaction Guaranteed",
+      benefit3Desc: "Unlimited revisions until you're happy",
+    },
+    // Footer
+    footer: {
+      description:
+        "Transforming ideas into exceptional digital experiences. We build products that drive real business results.",
+      servicesTitle: "Services",
+      service1: "Booking Systems",
+      service2: "Landing Pages",
+      service3: "Digital Invitations",
+      service4: "Custom Development",
+      companyTitle: "Company",
+      company1: "About Us",
+      company2: "Portfolio",
+      company3: "Process",
+      company4: "Careers",
+      contactTitle: "Get in Touch",
+      location: "Buenos Aires, Argentina",
+      copyright: "Nexus Digital Studio. All rights reserved.",
+      privacy: "Privacy Policy",
+      terms: "Terms of Service",
+    },
+  },
+  es: {
+    // Header
+    nav: {
+      services: "Servicios",
+      portfolio: "Portafolio",
+      about: "Nosotros",
+      contact: "Contacto",
+      login: "Ingresar",
+      startProject: "Iniciar Proyecto",
+    },
+    // Hero
+    hero: {
+      badge: "Creando Experiencias Digitales Desde 2020",
+      title1: "Transformamos Ideas",
+      title2: "En Experiencias Digitales",
+      title3: "De Alto Rendimiento",
+      subtitle:
+        "Desde sistemas de reservas inteligentes hasta páginas de destino impactantes e invitaciones digitales memorables. Transformamos ideas en experiencias digitales de alto rendimiento.",
+      cta1: "Iniciar Tu Proyecto",
+      cta2: "Ver Showreel",
+      stat1: "200+",
+      stat1Label: "Proyectos Entregados",
+      stat2: "50+",
+      stat2Label: "Clientes Felices",
+      stat3: "99%",
+      stat3Label: "Satisfacción del Cliente",
+    },
+    // Services
+    services: {
+      badge: "Nuestros Servicios",
+      title: "Soluciones Digitales Que",
+      titleHighlight: "Impulsan el Crecimiento",
+      subtitle:
+        "Nos especializamos en tres productos digitales principales, cada uno elaborado con precisión, rendimiento y tus objetivos comerciales en mente.",
+      service1: {
+        title: "Sistemas de Reservas Online",
+        subtitle: "Turneros",
+        description:
+          "Plataformas inteligentes de programación de citas que optimizan las operaciones de clínicas, salones, consultores y negocios basados en servicios.",
+        feature1: "Sincronización de disponibilidad en tiempo real",
+        feature2: "Recordatorios automáticos por SMS y email",
+        feature3: "Calendarios multi-personal",
+        feature4: "Integración de pagos",
+      },
+      service2: {
+        title: "Páginas de Destino Personalizadas",
+        subtitle: "Diseño de Alta Conversión",
+        description:
+          "Páginas de destino enfocadas en conversión que capturan la atención, cuentan tu historia y convierten visitantes en clientes leales.",
+        feature1: "Diseño responsive móvil primero",
+        feature2: "Optimizado para SEO y Core Web Vitals",
+        feature3: "Listo para pruebas A/B",
+        feature4: "Integración de analytics",
+      },
+      service3: {
+        title: "Invitaciones Digitales",
+        subtitle: "Experiencias Interactivas",
+        description:
+          "Invitaciones animadas impresionantes para bodas, cumpleaños, eventos corporativos y celebraciones que dejan impresiones duraderas.",
+        feature1: "Animaciones y efectos personalizados",
+        feature2: "Panel de seguimiento de confirmaciones",
+        feature3: "Integración de galería de fotos",
+        feature4: "Compartir en redes sociales",
+      },
+      learnMore: "Saber Más",
+    },
+    // Features
+    features: {
+      badge: "Por Qué Elegirnos",
+      title: "Construido Diferente,",
+      titleHighlight: "Entregado Mejor",
+      subtitle:
+        "Cada proyecto que entregamos combina excelencia técnica con innovación creativa, asegurando que tu presencia digital se destaque.",
+      feature1: "Rendimiento Ultrarrápido",
+      feature1Desc: "Tiempos de carga en fracciones de segundo con recursos optimizados",
+      feature2: "Seguridad Empresarial",
+      feature2Desc: "Encriptación SSL, pagos seguros y cumplimiento GDPR integrado",
+      feature3: "Diseño a Medida",
+      feature3Desc: "Estética personalizada adaptada a tu identidad y visión de marca",
+      feature4: "Arquitectura Limpia",
+      feature4Desc: "Código mantenible y escalable siguiendo las mejores prácticas",
+      feature5: "Responsive Primero",
+      feature5Desc: "Experiencia impecable en todos los dispositivos y tamaños de pantalla",
+      feature6: "Optimizado para SEO",
+      feature6Desc: "Construido para visibilidad con marcado semántico y datos estructurados",
+      feature7: "Entrega Rápida",
+      feature7Desc: "Desarrollo ágil con actualizaciones regulares y entregas rápidas",
+      feature8: "Soporte Continuo",
+      feature8Desc: "Asistencia dedicada y mantenimiento después del lanzamiento",
+    },
+    // CTA
+    cta: {
+      badge: "Hablemos",
+      title: "¿Listo para Transformar Tu",
+      titleHighlight: "Presencia Digital?",
+      subtitle:
+        "Ya sea que necesites un sistema de reservas, página de destino o invitación digital, estamos aquí para dar vida a tu visión. Creemos algo extraordinario juntos.",
+      cta1: "Agendar Consulta",
+      cta2: "Enviar Mensaje",
+      benefit1: "Llamada de Descubrimiento Gratis",
+      benefit1Desc: "Consulta de 30 minutos para entender tus necesidades",
+      benefit2: "Entrega Rápida",
+      benefit2Desc: "La mayoría de proyectos entregados en 2-4 semanas",
+      benefit3: "Satisfacción Garantizada",
+      benefit3Desc: "Revisiones ilimitadas hasta que estés feliz",
+    },
+    // Footer
+    footer: {
+      description:
+        "Transformando ideas en experiencias digitales excepcionales. Construimos productos que generan resultados comerciales reales.",
+      servicesTitle: "Servicios",
+      service1: "Sistemas de Reservas",
+      service2: "Páginas de Destino",
+      service3: "Invitaciones Digitales",
+      service4: "Desarrollo Personalizado",
+      companyTitle: "Empresa",
+      company1: "Sobre Nosotros",
+      company2: "Portafolio",
+      company3: "Proceso",
+      company4: "Carreras",
+      contactTitle: "Contáctanos",
+      location: "Buenos Aires, Argentina",
+      copyright: "Nexus Digital Studio. Todos los derechos reservados.",
+      privacy: "Política de Privacidad",
+      terms: "Términos de Servicio",
+    },
+  },
+  pt: {
+    // Header
+    nav: {
+      services: "Serviços",
+      portfolio: "Portfólio",
+      about: "Sobre",
+      contact: "Contato",
+      login: "Entrar",
+      startProject: "Iniciar Projeto",
+    },
+    // Hero
+    hero: {
+      badge: "Criando Experiências Digitais Desde 2020",
+      title1: "Transformando Ideias",
+      title2: "Em Experiências Digitais",
+      title3: "De Alto Desempenho",
+      subtitle:
+        "De sistemas de agendamento inteligentes a páginas de destino deslumbrantes e convites digitais memoráveis. Transformamos ideias em experiências digitais de alto desempenho.",
+      cta1: "Iniciar Seu Projeto",
+      cta2: "Assistir Showreel",
+      stat1: "200+",
+      stat1Label: "Projetos Entregues",
+      stat2: "50+",
+      stat2Label: "Clientes Felizes",
+      stat3: "99%",
+      stat3Label: "Satisfação do Cliente",
+    },
+    // Services
+    services: {
+      badge: "Nossos Serviços",
+      title: "Soluções Digitais Que",
+      titleHighlight: "Impulsionam o Crescimento",
+      subtitle:
+        "Especializamo-nos em três produtos digitais principais, cada um elaborado com precisão, desempenho e seus objetivos de negócios em mente.",
+      service1: {
+        title: "Sistemas de Agendamento Online",
+        subtitle: "Turneros",
+        description:
+          "Plataformas inteligentes de agendamento de consultas que otimizam operações para clínicas, salões, consultores e negócios baseados em serviços.",
+        feature1: "Sincronização de disponibilidade em tempo real",
+        feature2: "Lembretes automáticos por SMS e e-mail",
+        feature3: "Calendários multi-funcionários",
+        feature4: "Integração de pagamento",
+      },
+      service2: {
+        title: "Páginas de Destino Personalizadas",
+        subtitle: "Design de Alta Conversão",
+        description:
+          "Páginas de destino focadas em conversão que capturam atenção, contam sua história e transformam visitantes em clientes fiéis.",
+        feature1: "Design responsivo mobile-first",
+        feature2: "Otimizado para SEO e Core Web Vitals",
+        feature3: "Pronto para testes A/B",
+        feature4: "Integração de analytics",
+      },
+      service3: {
+        title: "Convites Digitais",
+        subtitle: "Experiências Interativas",
+        description:
+          "Convites animados impressionantes para casamentos, aniversários, eventos corporativos e celebrações que deixam impressões duradouras.",
+        feature1: "Animações e efeitos personalizados",
+        feature2: "Painel de rastreamento de confirmações",
+        feature3: "Integração de galeria de fotos",
+        feature4: "Compartilhamento social",
+      },
+      learnMore: "Saiba Mais",
+    },
+    // Features
+    features: {
+      badge: "Por Que Nos Escolher",
+      title: "Construído Diferente,",
+      titleHighlight: "Entregue Melhor",
+      subtitle:
+        "Cada projeto que entregamos combina excelência técnica com inovação criativa, garantindo que sua presença digital se destaque.",
+      feature1: "Desempenho Relâmpago",
+      feature1Desc: "Tempos de carregamento em frações de segundo com recursos otimizados",
+      feature2: "Segurança Empresarial",
+      feature2Desc: "Criptografia SSL, pagamentos seguros e conformidade GDPR integrada",
+      feature3: "Design Sob Medida",
+      feature3Desc: "Estética personalizada adaptada à sua identidade e visão de marca",
+      feature4: "Arquitetura Limpa",
+      feature4Desc: "Código manutenível e escalável seguindo as melhores práticas",
+      feature5: "Responsivo Primeiro",
+      feature5Desc: "Experiência impecável em todos os dispositivos e tamanhos de tela",
+      feature6: "Otimizado para SEO",
+      feature6Desc: "Construído para visibilidade com marcação semântica e dados estruturados",
+      feature7: "Entrega Rápida",
+      feature7Desc: "Desenvolvimento ágil com atualizações regulares e entrega rápida",
+      feature8: "Suporte Contínuo",
+      feature8Desc: "Assistência dedicada e manutenção após o lançamento",
+    },
+    // CTA
+    cta: {
+      badge: "Vamos Conversar",
+      title: "Pronto para Transformar Sua",
+      titleHighlight: "Presença Digital?",
+      subtitle:
+        "Seja para um sistema de agendamento, página de destino ou convite digital, estamos aqui para dar vida à sua visão. Vamos criar algo extraordinário juntos.",
+      cta1: "Agendar Consulta",
+      cta2: "Enviar Mensagem",
+      benefit1: "Chamada de Descoberta Gratuita",
+      benefit1Desc: "Consulta de 30 minutos para entender suas necessidades",
+      benefit2: "Entrega Rápida",
+      benefit2Desc: "A maioria dos projetos entregues em 2-4 semanas",
+      benefit3: "Satisfação Garantida",
+      benefit3Desc: "Revisões ilimitadas até você ficar satisfeito",
+    },
+    // Footer
+    footer: {
+      description:
+        "Transformando ideias em experiências digitais excepcionais. Construímos produtos que geram resultados de negócios reais.",
+      servicesTitle: "Serviços",
+      service1: "Sistemas de Agendamento",
+      service2: "Páginas de Destino",
+      service3: "Convites Digitais",
+      service4: "Desenvolvimento Personalizado",
+      companyTitle: "Empresa",
+      company1: "Sobre Nós",
+      company2: "Portfólio",
+      company3: "Processo",
+      company4: "Carreiras",
+      contactTitle: "Entre em Contato",
+      location: "Buenos Aires, Argentina",
+      copyright: "Nexus Digital Studio. Todos os direitos reservados.",
+      privacy: "Política de Privacidade",
+      terms: "Termos de Serviço",
+    },
+  },
+}

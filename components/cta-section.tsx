@@ -1,11 +1,14 @@
 "use client"
 
-import type React from "react"
-
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Mail, MessageCircle } from "lucide-react"
+import { ArrowRightIcon, MailIcon, MessageCircleIcon } from "lucide-react"
+import { useApp } from "@/lib/app-context"
+import { translations } from "@/lib/translations"
 
 export function CTASection() {
+  const { language } = useApp()
+  const t = translations[language]
+
   return (
     <section id="contact" className="py-24 lg:py-32 relative overflow-hidden">
       {/* Background Elements */}
@@ -28,31 +31,28 @@ export function CTASection() {
                 <div>
                   <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 text-accent text-sm font-medium mb-6">
                     <span className="w-1.5 h-1.5 rounded-full bg-accent" />
-                    Let's Talk
+                    {t.cta.badge}
                   </div>
                   <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground mb-6 tracking-tight text-balance">
-                    Ready to Transform Your <span className="text-gradient">Digital Presence?</span>
+                    {t.cta.title} <span className="text-gradient">{t.cta.titleHighlight}</span>
                   </h2>
-                  <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                    Whether you need a booking system, landing page, or digital invitation, we're here to bring your
-                    vision to life. Let's create something extraordinary together.
-                  </p>
+                  <p className="text-lg text-muted-foreground leading-relaxed mb-8">{t.cta.subtitle}</p>
 
                   <div className="flex flex-col sm:flex-row gap-4">
                     <Button
                       size="lg"
                       className="h-14 px-8 bg-gradient-to-r from-primary to-secondary text-primary-foreground border-0 shadow-xl shadow-primary/25 hover:shadow-2xl hover:shadow-primary/30 hover:scale-105 transition-all duration-300 group"
                     >
-                      Schedule Consultation
-                      <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                      {t.cta.cta1}
+                      <ArrowRightIcon className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                     </Button>
                     <Button
                       size="lg"
                       variant="outline"
                       className="h-14 px-8 bg-background/50 hover:bg-muted/50 transition-all duration-300"
                     >
-                      <Mail className="mr-2 w-5 h-5" />
-                      Send Message
+                      <MailIcon className="mr-2 w-5 h-5" />
+                      {t.cta.cta2}
                     </Button>
                   </div>
                 </div>
@@ -61,19 +61,19 @@ export function CTASection() {
                 <div className="space-y-4">
                   {[
                     {
-                      icon: MessageCircle,
-                      title: "Free Discovery Call",
-                      description: "30-minute consultation to understand your needs",
+                      icon: MessageCircleIcon,
+                      title: t.cta.benefit1,
+                      description: t.cta.benefit1Desc,
                     },
                     {
-                      icon: Zap,
-                      title: "Quick Turnaround",
-                      description: "Most projects delivered within 2-4 weeks",
+                      icon: ArrowRightIcon,
+                      title: t.cta.benefit2,
+                      description: t.cta.benefit2Desc,
                     },
                     {
-                      icon: Shield,
-                      title: "Satisfaction Guaranteed",
-                      description: "Unlimited revisions until you're happy",
+                      icon: MailIcon,
+                      title: t.cta.benefit3,
+                      description: t.cta.benefit3Desc,
                     },
                   ].map((item, index) => {
                     const Icon = item.icon
@@ -99,43 +99,5 @@ export function CTASection() {
         </div>
       </div>
     </section>
-  )
-}
-
-function Zap(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      {...props}
-    >
-      <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z" />
-    </svg>
-  )
-}
-
-function Shield(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      {...props}
-    >
-      <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
-    </svg>
   )
 }

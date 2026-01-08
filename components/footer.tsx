@@ -1,7 +1,12 @@
+"use client"
 import { Instagram, Linkedin, Mail, Twitter, MapPin, Phone } from "lucide-react"
+import { useApp } from "@/lib/app-context"
+import { translations } from "@/lib/translations"
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
+  const { language } = useApp()
+  const t = translations[language]
 
   return (
     <footer className="border-t border-border bg-muted/20">
@@ -22,10 +27,7 @@ export function Footer() {
                 </span>
               </div>
             </div>
-            <p className="text-muted-foreground leading-relaxed mb-6 max-w-xs">
-              Transforming ideas into exceptional digital experiences. We build products that drive real business
-              results.
-            </p>
+            <p className="text-muted-foreground leading-relaxed mb-6 max-w-xs">{t.footer.description}</p>
             <div className="flex items-center gap-2">
               {[
                 { icon: Twitter, href: "#" },
@@ -49,9 +51,9 @@ export function Footer() {
 
           {/* Services */}
           <div className="lg:col-span-2">
-            <h3 className="font-semibold text-foreground mb-4">Services</h3>
+            <h3 className="font-semibold text-foreground mb-4">{t.footer.servicesTitle}</h3>
             <ul className="space-y-3">
-              {["Booking Systems", "Landing Pages", "Digital Invitations", "Custom Development"].map((item, index) => (
+              {[t.footer.service1, t.footer.service2, t.footer.service3, t.footer.service4].map((item, index) => (
                 <li key={index}>
                   <a
                     href="#"
@@ -66,9 +68,9 @@ export function Footer() {
 
           {/* Company */}
           <div className="lg:col-span-2">
-            <h3 className="font-semibold text-foreground mb-4">Company</h3>
+            <h3 className="font-semibold text-foreground mb-4">{t.footer.companyTitle}</h3>
             <ul className="space-y-3">
-              {["About Us", "Portfolio", "Process", "Careers"].map((item, index) => (
+              {[t.footer.company1, t.footer.company2, t.footer.company3, t.footer.company4].map((item, index) => (
                 <li key={index}>
                   <a
                     href="#"
@@ -83,11 +85,11 @@ export function Footer() {
 
           {/* Contact */}
           <div className="lg:col-span-4">
-            <h3 className="font-semibold text-foreground mb-4">Get in Touch</h3>
+            <h3 className="font-semibold text-foreground mb-4">{t.footer.contactTitle}</h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                <span className="text-sm text-muted-foreground">Buenos Aires, Argentina</span>
+                <span className="text-sm text-muted-foreground">{t.footer.location}</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-primary shrink-0" />
@@ -103,13 +105,15 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-muted-foreground">© {currentYear} Nexus Digital Studio. All rights reserved.</p>
+          <p className="text-sm text-muted-foreground">
+            © {currentYear} {t.footer.copyright}
+          </p>
           <div className="flex items-center gap-6">
             <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200">
-              Privacy Policy
+              {t.footer.privacy}
             </a>
             <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200">
-              Terms of Service
+              {t.footer.terms}
             </a>
           </div>
         </div>

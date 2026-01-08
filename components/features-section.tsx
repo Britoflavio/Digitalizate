@@ -1,51 +1,56 @@
 "use client"
 
 import { Zap, Shield, Palette, Code2, Smartphone, Rocket, Clock, HeartHandshake } from "lucide-react"
-
-const features = [
-  {
-    icon: Zap,
-    title: "Lightning Performance",
-    description: "Sub-second load times with optimized assets and edge delivery",
-  },
-  {
-    icon: Shield,
-    title: "Enterprise Security",
-    description: "SSL encryption, secure payments, and GDPR compliance built-in",
-  },
-  {
-    icon: Palette,
-    title: "Bespoke Design",
-    description: "Custom aesthetics tailored to your brand identity and vision",
-  },
-  {
-    icon: Code2,
-    title: "Clean Architecture",
-    description: "Maintainable, scalable code following industry best practices",
-  },
-  {
-    icon: Smartphone,
-    title: "Responsive First",
-    description: "Flawless experience across all devices and screen sizes",
-  },
-  {
-    icon: Rocket,
-    title: "SEO Optimized",
-    description: "Built for visibility with semantic markup and structured data",
-  },
-  {
-    icon: Clock,
-    title: "Fast Delivery",
-    description: "Agile development with regular updates and quick turnaround",
-  },
-  {
-    icon: HeartHandshake,
-    title: "Ongoing Support",
-    description: "Dedicated assistance and maintenance after launch",
-  },
-]
+import { useApp } from "@/lib/app-context"
+import { translations } from "@/lib/translations"
 
 export function FeaturesSection() {
+  const { language } = useApp()
+  const t = translations[language]
+
+  const features = [
+    {
+      icon: Zap,
+      title: t.features.feature1,
+      description: t.features.feature1Desc,
+    },
+    {
+      icon: Shield,
+      title: t.features.feature2,
+      description: t.features.feature2Desc,
+    },
+    {
+      icon: Palette,
+      title: t.features.feature3,
+      description: t.features.feature3Desc,
+    },
+    {
+      icon: Code2,
+      title: t.features.feature4,
+      description: t.features.feature4Desc,
+    },
+    {
+      icon: Smartphone,
+      title: t.features.feature5,
+      description: t.features.feature5Desc,
+    },
+    {
+      icon: Rocket,
+      title: t.features.feature6,
+      description: t.features.feature6Desc,
+    },
+    {
+      icon: Clock,
+      title: t.features.feature7,
+      description: t.features.feature7Desc,
+    },
+    {
+      icon: HeartHandshake,
+      title: t.features.feature8,
+      description: t.features.feature8Desc,
+    },
+  ]
+
   return (
     <section id="portfolio" className="py-24 lg:py-32 bg-muted/30 relative overflow-hidden">
       {/* Background Pattern */}
@@ -65,15 +70,12 @@ export function FeaturesSection() {
         <div className="text-center max-w-3xl mx-auto mb-16 lg:mb-20">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/10 text-secondary text-sm font-medium mb-6">
             <span className="w-1.5 h-1.5 rounded-full bg-secondary" />
-            Why Choose Us
+            {t.features.badge}
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6 tracking-tight text-balance">
-            Built Different, <span className="text-gradient">Delivered Better</span>
+            {t.features.title} <span className="text-gradient">{t.features.titleHighlight}</span>
           </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            Every project we deliver combines technical excellence with creative innovation, ensuring your digital
-            presence stands out.
-          </p>
+          <p className="text-lg text-muted-foreground leading-relaxed">{t.features.subtitle}</p>
         </div>
 
         {/* Features Grid */}

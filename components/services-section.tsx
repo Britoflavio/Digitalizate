@@ -2,51 +2,58 @@
 
 import { Calendar, Globe, PartyPopper, ArrowUpRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
-
-const services = [
-  {
-    icon: Calendar,
-    title: "Online Booking Systems",
-    subtitle: "Turneros",
-    description:
-      "Intelligent appointment scheduling platforms that streamline operations for clinics, salons, consultants, and service-based businesses.",
-    features: [
-      "Real-time availability sync",
-      "Automated SMS & email reminders",
-      "Multi-staff calendars",
-      "Payment integration",
-    ],
-    gradient: "from-primary to-accent",
-    image: "/placeholder.svg?height=400&width=600",
-  },
-  {
-    icon: Globe,
-    title: "Custom Landing Pages",
-    subtitle: "High-Converting Design",
-    description:
-      "Conversion-focused landing pages that capture attention, tell your story, and turn visitors into loyal customers.",
-    features: [
-      "Mobile-first responsive",
-      "SEO & Core Web Vitals optimized",
-      "A/B testing ready",
-      "Analytics integration",
-    ],
-    gradient: "from-accent to-secondary",
-    image: "/placeholder.svg?height=400&width=600",
-  },
-  {
-    icon: PartyPopper,
-    title: "Digital Invitations",
-    subtitle: "Interactive Experiences",
-    description:
-      "Stunning animated invitations for weddings, birthdays, corporate events, and celebrations that leave lasting impressions.",
-    features: ["Custom animations & effects", "RSVP tracking dashboard", "Photo gallery integration", "Social sharing"],
-    gradient: "from-secondary to-primary",
-    image: "/placeholder.svg?height=400&width=600",
-  },
-]
+import { useApp } from "@/lib/app-context"
+import { translations } from "@/lib/translations"
 
 export function ServicesSection() {
+  const { language } = useApp()
+  const t = translations[language]
+
+  const services = [
+    {
+      icon: Calendar,
+      title: t.services.service1.title,
+      subtitle: t.services.service1.subtitle,
+      description: t.services.service1.description,
+      features: [
+        t.services.service1.feature1,
+        t.services.service1.feature2,
+        t.services.service1.feature3,
+        t.services.service1.feature4,
+      ],
+      gradient: "from-primary to-accent",
+      image: "/placeholder.svg?height=400&width=600",
+    },
+    {
+      icon: Globe,
+      title: t.services.service2.title,
+      subtitle: t.services.service2.subtitle,
+      description: t.services.service2.description,
+      features: [
+        t.services.service2.feature1,
+        t.services.service2.feature2,
+        t.services.service2.feature3,
+        t.services.service2.feature4,
+      ],
+      gradient: "from-accent to-secondary",
+      image: "/placeholder.svg?height=400&width=600",
+    },
+    {
+      icon: PartyPopper,
+      title: t.services.service3.title,
+      subtitle: t.services.service3.subtitle,
+      description: t.services.service3.description,
+      features: [
+        t.services.service3.feature1,
+        t.services.service3.feature2,
+        t.services.service3.feature3,
+        t.services.service3.feature4,
+      ],
+      gradient: "from-secondary to-primary",
+      image: "/placeholder.svg?height=400&width=600",
+    },
+  ]
+
   return (
     <section id="services" className="py-24 lg:py-32 relative overflow-hidden">
       {/* Background Elements */}
@@ -58,15 +65,12 @@ export function ServicesSection() {
         <div className="max-w-3xl mb-20">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
             <span className="w-1.5 h-1.5 rounded-full bg-primary" />
-            Our Services
+            {t.services.badge}
           </div>
           <h2 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground mb-6 tracking-tight text-balance">
-            Digital Solutions That <span className="text-gradient">Drive Growth</span>
+            {t.services.title} <span className="text-gradient">{t.services.titleHighlight}</span>
           </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            We specialize in three core digital products, each crafted with precision, performance, and your business
-            goals in mind.
-          </p>
+          <p className="text-lg text-muted-foreground leading-relaxed">{t.services.subtitle}</p>
         </div>
 
         {/* Services Grid */}
@@ -111,7 +115,7 @@ export function ServicesSection() {
                       variant="outline"
                       className="w-fit group/btn hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all duration-300 bg-transparent"
                     >
-                      Learn More
+                      {t.services.learnMore}
                       <ArrowUpRight className="ml-2 w-4 h-4 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
                     </Button>
                   </div>

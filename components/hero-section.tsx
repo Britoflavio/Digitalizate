@@ -3,9 +3,13 @@
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Play } from "lucide-react"
 import { useEffect, useState } from "react"
+import { useApp } from "@/lib/app-context"
+import { translations } from "@/lib/translations"
 
 export function HeroSection() {
   const [mounted, setMounted] = useState(false)
+  const { language } = useApp()
+  const t = translations[language]
 
   useEffect(() => {
     setMounted(true)
@@ -55,7 +59,7 @@ export function HeroSection() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75" />
               <span className="relative inline-flex rounded-full h-2 w-2 bg-primary" />
             </span>
-            <span className="text-sm font-medium text-foreground">Crafting Digital Experiences Since 2020</span>
+            <span className="text-sm font-medium text-foreground">{t.hero.badge}</span>
           </div>
 
           {/* Main Heading */}
@@ -64,11 +68,11 @@ export function HeroSection() {
               mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
-            <span className="text-gradient">Transforming Ideas</span>
+            <span className="text-gradient">{t.hero.title1}</span>
             <br />
-            Into High-Performance
+            {t.hero.title2}
             <br />
-            <span className="text-gradient">Digital Reality</span>
+            <span className="text-gradient">{t.hero.title3}</span>
           </h1>
 
           {/* Subtitle */}
@@ -77,8 +81,7 @@ export function HeroSection() {
               mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
-            From intelligent booking systems to stunning landing pages and memorable digital invitations. We transform
-            ideas into high-performance digital experiences.
+            {t.hero.subtitle}
           </p>
 
           {/* CTA Buttons */}
@@ -91,7 +94,7 @@ export function HeroSection() {
               size="lg"
               className="h-14 px-8 text-base bg-gradient-to-r from-primary to-secondary text-primary-foreground border-0 shadow-xl shadow-primary/25 hover:shadow-2xl hover:shadow-primary/30 hover:scale-105 transition-all duration-300 group"
             >
-              Start Your Project
+              {t.hero.cta1}
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button
@@ -100,7 +103,7 @@ export function HeroSection() {
               className="h-14 px-8 text-base bg-background/50 backdrop-blur-sm border-border hover:bg-muted/50 hover:border-primary/50 transition-all duration-300 group"
             >
               <Play className="mr-2 w-4 h-4 group-hover:scale-110 transition-transform" />
-              Watch Showreel
+              {t.hero.cta2}
             </Button>
           </div>
 
@@ -111,9 +114,9 @@ export function HeroSection() {
             }`}
           >
             {[
-              { value: "200+", label: "Projects Delivered" },
-              { value: "50+", label: "Happy Clients" },
-              { value: "99%", label: "Client Satisfaction" },
+              { value: t.hero.stat1, label: t.hero.stat1Label },
+              { value: t.hero.stat2, label: t.hero.stat2Label },
+              { value: t.hero.stat3, label: t.hero.stat3Label },
             ].map((stat, index) => (
               <div key={index} className="text-center">
                 <div className="text-3xl lg:text-4xl font-bold text-foreground">{stat.value}</div>
