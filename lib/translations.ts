@@ -244,7 +244,7 @@ export const translations = {
       company4: "algo",
       contactTitle: "Contáctanos",
       location: "Córdoba, Argentina",
-      copyright: "Digitalizate. Todos los derechos reservados.",
+      copyright: "AuraCode Argentina. Todos los derechos reservados.",
       privacy: "Política de Privacidad",
       terms: "Términos de Servicio",
     },
