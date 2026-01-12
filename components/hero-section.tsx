@@ -101,22 +101,7 @@ export function HeroSection() {
           </div>
 
           {/* Stats */}
-          <div
-            className={`flex flex-wrap items-center justify-center gap-8 lg:gap-16 transition-all duration-700 delay-400 ${
-              mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-            }`}
-          >
-            {[
-              { value: t.hero.stat1, label: t.hero.stat1Label },
-              { value: t.hero.stat2, label: t.hero.stat2Label },
-              { value: t.hero.stat3, label: t.hero.stat3Label },
-            ].map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="text-3xl lg:text-4xl font-bold text-foreground">{stat.value}</div>
-                <div className="text-sm text-muted-foreground mt-1">{stat.label}</div>
-              </div>
-            ))}
-          </div>
+          
         </div>
       </div>
 

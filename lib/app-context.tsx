@@ -13,8 +13,8 @@ interface AppContextType {
 const AppContext = createContext<AppContextType | undefined>(undefined)
 
 export function AppProvider({ children }: { children: ReactNode }) {
-  const [language, setLanguage] = useState<Language>("es")
-  const [isDarkMode, setIsDarkMode] = useState(true)
+  const [language, setLanguage] = useState<Language>("en")
+  const [isDarkMode, setIsDarkMode] = useState(false)
 
   // Load preferences from localStorage on mount
   useEffect(() => {
@@ -22,7 +22,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
     const savedTheme = localStorage.getItem("theme")
 
     if (savedLanguage) setLanguage(savedLanguage)
-    if (savedTheme === "Light") setIsDarkMode(false)
+    if (savedTheme === "dark") setIsDarkMode(true)
   }, [])
 
   // Update localStorage and document class when theme changes
