@@ -97,14 +97,7 @@ export function HeroSection() {
               {t.hero.cta1}
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="h-14 px-8 text-base bg-background/50 backdrop-blur-sm border-border hover:bg-muted/50 hover:border-primary/50 transition-all duration-300 group"
-            >
-              <Play className="mr-2 w-4 h-4 group-hover:scale-110 transition-transform" />
-              {t.hero.cta2}
-            </Button>
+
           </div>
 
           {/* Stats */}

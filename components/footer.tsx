@@ -17,13 +17,13 @@ export function Footer() {
             <div className="flex items-center gap-3 mb-6">
               <div className="relative">
                 <div className="w-11 h-11 rounded-2xl bg-gradient-to-br from-primary via-accent to-secondary flex items-center justify-center shadow-lg shadow-primary/20">
-                  <span className="text-primary-foreground font-bold text-xl tracking-tight">N</span>
+                  <span className="text-primary-foreground font-bold text-xl tracking-tight">A</span>
                 </div>
               </div>
               <div className="flex flex-col">
-                <span className="text-lg font-bold text-foreground tracking-tight">Nexus</span>
+                <span className="text-lg font-bold text-foreground tracking-tight">AuraCode</span>
                 <span className="text-[10px] font-medium text-muted-foreground uppercase tracking-widest">
-                  Digital Studio
+                  Argentina
                 </span>
               </div>
             </div>

@@ -100,7 +100,7 @@ export function Header() {
               <div className="absolute -inset-1 rounded-2xl bg-gradient-to-br from-primary to-secondary opacity-30 blur-md -z-10" />
             </div>
             <div className="flex flex-col">
-              <span className="text-lg font-bold text-foreground tracking-tight">Digitalizate</span>
+              <span className="text-lg font-bold text-foreground tracking-tight">AuraCode</span>
               <span className="text-[10px] font-medium text-muted-foreground uppercase tracking-widest">
                 Diseño y desarrollo web y móvil.
               </span>

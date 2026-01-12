@@ -122,8 +122,8 @@ export const translations = {
       company3: "Process",
       company4: "Careers",
       contactTitle: "Get in Touch",
-      location: "Buenos Aires, Argentina",
-      copyright: "Nexus Digital Studio. All rights reserved.",
+      location: "Córdoba, Argentina",
+      copyright: "AuraCode Argentina. All rights reserved.",
       privacy: "Privacy Policy",
       terms: "Terms of Service",
     },
@@ -144,7 +144,7 @@ export const translations = {
       title1: "Diseño y desarrollo",
       title2: "de páginas web",
       title3: "para profesionales",
-      subtitle: "Creamos sitios web rápidos, modernos y económicos ajustados a tus necesidades",
+      subtitle: "Desarrollamos páginas web en tiempo récord. Sitios web modernos y económicos optimizados para todos los dispositivos, con arquitectura AI-Ready diseñada para posicionar tu marca con las herramientas última generación. ",
       cta1: "Contáctanos",
       cta2: "Servicios",
 
@@ -152,8 +152,8 @@ export const translations = {
     // Services
     services: {
       badge: "Nuestros Servicios",
-      title: "Soluciones Digitales que",
-      titleHighlight: "Impulsan el crecimiento",
+      title: "Soluciones digitales que",
+      titleHighlight: "impulsan el crecimiento",
       subtitle:
         "Utilizamos tecnologías modernas y eficientes para crear sitios web a medida, rápidos y de alto rendimiento que se adapten a tus necesidades y te ayudan a crecer en línea.",
       service1: {
@@ -190,11 +190,11 @@ export const translations = {
     },
     // Features
     features: {
-      badge: "Qué nos diferencia",
-      title: "Más que código,",
+      badge: "¿Qué nos diferencia?",
+      title: "Invertír hoy es",
       titleHighlight: "Estrategia Digital",
       subtitle:
-        "No solo creamos sitios web; construimos activos digitales diseñados bajo estándares internacionales para posicionar tu marca y superar a tu competencia.",
+        "En el equipo de AuraCode, no solo creamos sitios web; construimos activos digitales diseñados bajo estándares internacionales para posicionar tu marca en cualquier parte del mundo.",
       feature1: "Rendimiento excepcional",
       feature1Desc: "Optimización extrema para cargas inmediatas que Google premia y tus clientes agradecen.",
       feature2: "Seguridad 24hs",
@@ -215,14 +215,14 @@ export const translations = {
     // CTA
     cta: {
       badge: "Hablemos",
-      title: "¿Listo para Transformar Tu",
-      titleHighlight: "Presencia Digital?",
+      title: "¿Tenés dudas sobre tu proyecto",
+      titleHighlight: "con AuraCode?",
       subtitle:
         "Ya sea que necesites un sistema de reservas, página de destino o invitación digital, estamos aquí para dar vida a tu visión. Creemos algo extraordinario juntos.",
-      cta1: "Agendar Consulta",
-      cta2: "Enviar Mensaje",
+      cta1: "Enviar mensaje",
+      cta2: "Quiero que me contacten",
       benefit1: "Consulta y presupuesto sin cargo",
-      benefit1Desc: "Sacate la duda y descubre como podemos ayudarte a crecer en línea.",
+      benefit1Desc: "Sácate la duda y descubre como podemos ayudarte a crecer en línea.",
       benefit2: "Entrega Rápida",
       benefit2Desc: "Todos los proyectos son entregados en tiempo record. Consultá el tiempo de entrega en cada servicio .",
       benefit3: "Satisfacción Garantizada",
@@ -244,7 +244,7 @@ export const translations = {
       company4: "algo",
       contactTitle: "Contáctanos",
       location: "Córdoba, Argentina",
-      copyright: "Digitalizate. Todos los derechos reservados.",
+      copyright: "AuraCode Argentina. Todos los derechos reservados.",
       privacy: "Política de Privacidad",
       terms: "Términos de Servicio",
     },
