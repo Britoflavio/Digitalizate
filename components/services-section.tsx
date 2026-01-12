@@ -1,9 +1,10 @@
 "use client"
 
-import { Calendar, Globe, PartyPopper, ArrowUpRight } from "lucide-react"
+import { Calendar, Globe, PartyPopper, ShoppingCart, ArrowUpRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useApp } from "@/lib/app-context"
 import { translations } from "@/lib/translations"
+import Link from "next/link"
 
 export function ServicesSection() {
   const { language } = useApp()
@@ -11,6 +12,7 @@ export function ServicesSection() {
 
   const services = [
     {
+      id: "booking-systems",
       icon: Calendar,
       title: t.services.service1.title,
       subtitle: t.services.service1.subtitle,
@@ -25,6 +27,7 @@ export function ServicesSection() {
       image: "/placeholder.svg?height=400&width=600",
     },
     {
+      id: "landing-pages",
       icon: Globe,
       title: t.services.service2.title,
       subtitle: t.services.service2.subtitle,
@@ -39,6 +42,7 @@ export function ServicesSection() {
       image: "/placeholder.svg?height=400&width=600",
     },
     {
+      id: "digital-invitations",
       icon: PartyPopper,
       title: t.services.service3.title,
       subtitle: t.services.service3.subtitle,
@@ -51,6 +55,21 @@ export function ServicesSection() {
       ],
       gradient: "from-secondary to-primary",
       image: "/placeholder.svg?height=400&width=600",
+    },
+    {
+      id: "ecommerce",
+      icon: ShoppingCart,
+      title: t.services.service4.title,
+      subtitle: t.services.service4.subtitle,
+      description: t.services.service4.description,
+      features: [
+        t.services.service4.feature1,
+        t.services.service4.feature2,
+        t.services.service4.feature3,
+        t.services.service4.feature4,
+      ],
+      gradient: "from-primary to-secondary",
+      image: "/ecommerce-online-store-dashboard.jpg",
     },
   ]
 
@@ -111,13 +130,15 @@ export function ServicesSection() {
                       ))}
                     </div>
 
-                    <Button
-                      variant="outline"
-                      className="w-fit group/btn hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all duration-300 bg-transparent"
-                    >
-                      {t.services.learnMore}
-                      <ArrowUpRight className="ml-2 w-4 h-4 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
-                    </Button>
+                    <Link href={`/services/${service.id}`}>
+                      <Button
+                        variant="outline"
+                        className="w-fit group/btn hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all duration-300 bg-transparent"
+                      >
+                        {t.services.learnMore}
+                        <ArrowUpRight className="ml-2 w-4 h-4 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
+                      </Button>
+                    </Link>
                   </div>
 
                   {/* Image */}
