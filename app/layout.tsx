@@ -8,9 +8,9 @@ import { AppProvider } from "@/lib/app-context"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Digital Agency | Custom Web Solutions",
+  title: "Desarrollo y diseño web",
   description:
-    "Professional digital products agency specializing in booking systems, landing pages, and digital invitations",
+    "Creamos páginas web, turneros, invitaciones digitales y más de manera rápida, económica y efectiva para que tu negocio crezca",
   generator: "v0.app",
   icons: {
     icon: [
@@ -23,13 +23,16 @@ export const metadata: Metadata = {
         media: "(prefers-color-scheme: dark)",
       },
       {
-        url: "/icon.svg",
+        url: "/icon.png",
         type: "image/svg+xml",
       },
     ],
     apple: "/apple-icon.png",
   },
 }
+
+
+
 
 export default function RootLayout({
   children,
