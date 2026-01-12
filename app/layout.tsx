@@ -1,11 +1,11 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
+import { Outfit } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 import { AppProvider } from "@/lib/app-context"
 
-const inter = Inter({ subsets: ["latin"] })
+const outfit = Outfit ({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Desarrollo y diseño web",
@@ -38,7 +38,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} font-sans antialiased`}>
+      <body className={`${outfit.className} font-sans antialiased`}>
         <AppProvider>{children}</AppProvider>
         <Analytics />
       </body>

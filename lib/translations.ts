@@ -128,15 +128,15 @@ export const translations = {
       terms: "Terms of Service",
     },
   },
-  es: {
+  es: {                     
     // Header
     nav: {
       services: "Servicios",
-      portfolio: "Paginas Web",
+      portfolio: "Paginas Web",          
       about: "Nosotros",
       contact: "Contacto",
-      login: "Login(?",
-      startProject: "Crear tu sitio web",
+      login: "",
+      startProject: "Pedir Presupuesto",
     },
     // Hero
     hero: {

@@ -137,10 +137,7 @@ export function Header() {
             >
               {isDarkMode ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
             </Button>
-
-            <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground">
-              {t.nav.login}
-            </Button>
+  
             <Button
               size="sm"
               className="bg-gradient-to-r from-primary to-secondary text-primary-foreground border-0 shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/30 hover:scale-105 transition-all duration-300"
