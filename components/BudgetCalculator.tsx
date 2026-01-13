@@ -8,7 +8,7 @@ export default function BudgetCalculator() {
     { 
       id: 1, 
       name: "Landing Page Pro", 
-      price: 300, 
+      price: 3000, 
       desc: "Diseño de alto impacto, 4 secciones, formulario.", 
       selected: true, 
       required: true 
