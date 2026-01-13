@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { useApp } from "@/lib/app-context"
 import { translations } from "@/lib/translations"
 import Link from "next/link"
+import Image from "next/image"
 
 export function ServicesSection() {
   const { language } = useApp()
@@ -24,7 +25,7 @@ export function ServicesSection() {
         t.services.service1.feature4,
       ],
       gradient: "from-primary to-accent",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/SistemasDeReservasOnline.png",
     },
     {
       id: "landing-pages",
@@ -39,7 +40,7 @@ export function ServicesSection() {
         t.services.service2.feature4,
       ],
       gradient: "from-accent to-secondary",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/DesarrolloWebYMovil.png",
     },
     {
       id: "digital-invitations",
@@ -54,7 +55,7 @@ export function ServicesSection() {
         t.services.service3.feature4,
       ],
       gradient: "from-secondary to-primary",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/InvitacionesDigitales.png",
     },
     {
       id: "ecommerce",
@@ -69,7 +70,7 @@ export function ServicesSection() {
         t.services.service4.feature4,
       ],
       gradient: "from-primary to-secondary",
-      image: "/ecommerce-online-store-dashboard.jpg",
+      image: "/SolucionesE-commerce.png",
     },
   ]
 
