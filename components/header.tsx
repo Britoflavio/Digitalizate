@@ -95,7 +95,7 @@ export function Header() {
           <div className="flex items-center gap-3">
             <div className="relative">
               <div className="w-11 h-11 rounded-2xl bg-gradient-to-br from-primary via-accent to-secondary flex items-center justify-center shadow-lg shadow-primary/30">
-                <span className="text-primary-foreground font-bold text-xl tracking-tight">D</span>
+                <span className="text-primary-foreground font-bold text-xl tracking-tight">AC</span>
               </div>
               <div className="absolute -inset-1 rounded-2xl bg-gradient-to-br from-primary to-secondary opacity-30 blur-md -z-10" />
             </div>
