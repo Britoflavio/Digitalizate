@@ -6,6 +6,7 @@ import { CTASection } from "@/components/cta-section"
 import { Footer } from "@/components/footer"
 import BudgetCalculator from '@/components/BudgetCalculator';
 
+
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-background">
